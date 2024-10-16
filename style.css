@@ -1,0 +1,394 @@
+body {
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #f4a000;
+    animation: pulse 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+.custom-box {
+    background-color: #f4f2f8;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    background-color: #2e105d; /* Color de fondo oscuro */
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.btn-contact {
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: #f4a000;
+    color: #fff;
+    border-color: #f4a000;
+}
+
+.hero-section {
+    background-color: #3d1579;
+    color: #fff;
+    padding: 50px 0;
+    text-align: left;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #f4a000;
+}
+
+.custom-btn {
+    background-color: #f4a000;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #472c85;
+    color: #fff;
+    border: 2px solid #fff;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon:hover {
+    animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+footer a:hover {
+    color: #f4a000;
+    text-decoration: underline;
+}
+
+.ventaja-item .icon-container {
+    background-color: #3d1579;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ventaja-item:hover .icon-container {
+    background-color: #f4a000; /* Cambia el fondo a naranja */
+    transform: translateY(-10px); /* Eleva el contenedor */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon-container .icono {
+    font-size: 2.5em;
+    color: #f4a000;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.ventaja-item:hover .icon-container .icono {
+    color: #3d1579; /* Cambia el color del icono a morado */
+    transform: rotate(20deg); /* Gira el icono ligeramente */
+}
+
+.icon-container p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.ventaja-item:hover .icon-container p {
+    color: #fff;
+    font-weight: bold;
+}
+
+.asistentes-virtuales {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #472c85, #3d1579);
+    color: #fff;
+}
+
+.asistentes-virtuales h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #f4a000;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.btn-asistente {
+    background-color: #f4a000;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 12px 30px;
+    transition: transform 0.3s ease, background-color 0.3s ease,
+        box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.text-primary {
+    color: #472c85 !important;
+}
+
+.btn-asistente:hover {
+    background-color: #472c85; /* Cambia al color de fondo de la sección */
+    color: #fff;
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-asistente::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateX(-100%) rotate(45deg);
+    transition: transform 0.5s ease;
+}
+
+.btn-asistente:hover::before {
+    transform: translateX(100%) rotate(45deg);
+}
+
+@keyframes pulseEffect {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.btn-asistente:hover .icon {
+    animation: pulseEffect 0.5s ease-in-out infinite;
+}
+
+h2.text-primary {
+    color: #3d1579;
+    font-weight: bold;
+}
+
+h4.text-dark {
+    color: #3d1579;
+    font-weight: bold;
+}
+
+ul.list-unstyled li {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+ul.list-unstyled li i {
+    color: #f4a000; /* Cambia el color de los iconos */
+    margin-right: 8px;
+}
+
+.bg-light {
+    background-color: #f4f2f8 !important;
+}
+
+.img-fluid {
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.feature-item i {
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.feature-item p {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.feature-item:hover i {
+    color: #f4a000; /* Cambia el color del ícono al pasar el cursor */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del ícono */
+}
+
+.feature-item:hover p {
+    color: #f4a000; /* Cambia el color del texto al pasar el cursor */
+}
+
+.partner-logo {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto; /* Centra el contenedor en dispositivos pequeños */
+}
+
+.partner-logo img {
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.partner-logo:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.img-fluid {
+    max-width: 80%; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.list-unstyled li {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.card {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+}
+
+.feature-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco para las tarjetas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+h4 {
+    margin-bottom: 15px; /* Espacio entre el título y el contenido */
+}
+
+.advantage-card {
+    background-color: #5e3c95; /* Un fondo más claro para las tarjetas */
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.advantage-card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+}
+
+.advantage-card h4 {
+    margin-top: 15px; /* Espacio entre el ícono y el título */
+}
+
+.certification-card {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 120px; /* Establece una altura fija para igualar las tarjetas */
+}
+
+.certification-card img {
+    max-height: 100%; /* Asegúrate de que la imagen se ajuste al contenedor */
+    max-width: 100%; /* Mantener la proporción */
+}
+
+h2 {
+    font-weight: 700;
+}
+
+.lead {
+    font-size: 1.2em; /* Aumentar el tamaño de la fuente del párrafo principal */
+    margin-bottom: 20px; /* Espacio debajo del párrafo principal */
+}
+
+.feature-item {
+    background-color: #f4f2f8; /* Fondo claro para las características */
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+}
+
+.feature-item h5 {
+    margin-top: 15px; /* Espacio entre el ícono y el título */
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+}
+
+h5 {
+    margin-top: 10px; /* Espacio entre el icono y el título */
+}
